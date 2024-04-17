@@ -1,0 +1,18 @@
+button {
+    margin: 10px;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+  }
+  
+  #button1 { background-color: #f7198c; color: #fff; }
+  #button2 { background-color: #f0361a; color: #fff; }
+  #button3 { background-color: #e5f41e; color: #fff; }
+  
+  #elementToToggle {
+    display: block;
+    padding: 20px;
+    margin: 20px 0;
+    background-color: #f8d7da;
+    border: 1px solid #f5c6cb;
+  }
