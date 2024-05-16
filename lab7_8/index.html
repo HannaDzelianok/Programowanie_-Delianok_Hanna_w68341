@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formularz rejestracyjny</title>
+    
+</head>
+<body>
+<div>
+<form action="#" method="post">
+    <label for="firstName">Imię:</label>
+    <input type="text" id="firstName" name="firstName" required>
+</div>
+<div>
+    <label for="lastName">Nazwisko:</label>
+    <input type="text" id="lastName" name="lastName" required>
+</div> <div>
+    <label for="email">Email:</label>
+    <input type="email" id="email" name="email" required>
+</div> <div>
+    <label for="password">Hasło (co najmniej 8 znaków):</label>
+    <input type="password" id="password" name="password" pattern=".{8,}" required title="Hasło musi zawierać co najmniej 8 znaków">
+</div> <div>
+    <label for="gender">Płeć:</label>
+    <select id="gender" name="gender" required>
+        <option value="">Wybierz</option>
+        <option value="male">Mężczyzna</option>
+        <option value="female">Kobieta</option>
+        
+    </select>
+</div> <div>
+    <label for="phone">Telefon:</label>
+    <input type="tel" id="phone" name="phone" pattern="[0-9]{9}" required title="Numer telefonu powinien składać się z 9 cyfr">
+</div> <div>
+    <label for="phone">Telefon:</label>
+    <input type="text" id="phone" name="phone" required>
+    <div id="phoneError" class="error"></div>
+
+<div>
+    <label for="birthdate">Data Urodzenia:</label>
+    <input type="date" id="birthdate" name="birthdate" required>
+</div> <div>
+    <div>
+        <label for="confirmPassword">Powtórz hasło:</label>
+        <input type="password" id="confirmPassword" name="confirmPassword" required>
+        <div id="confirmPasswordError" class="error"></div>
+    </div>
+    
+    <label for="country">Kraj:</label>
+    <input type="text" id="country" name="country" required>
+
+    <div>
+        <label for="province">Województwo:</label>
+        <input type="text" id="province" name="province" disabled>
+        <div id="provinceError" class="error"></div>
+    </div>
+    <div>
+        <label for="address">Adres zamieszkania:</label>
+        <input type="text" id="address" name="address" disabled>
+        <div id="addressError" class="error"></div>
+    </div>
+    <div>
+        <label for="sameAddress">Adres korespondencyjny:</label>
+        <input type="checkbox" id="sameAddress" name="sameAddress" onchange="toggleCorrespondenceAddress()">
+    </div>
+    <div id="correspondenceAddressDiv" style="display: none;">
+        <label for="correspondenceAddress">Adres korespondencyjny:</label>
+        <input type="text" id="correspondenceAddress" name="correspondenceAddress" disabled>
+        <div id="correspondenceAddressError" class="error"></div>
+    </div>
+    <div>
+        <input type="submit" value="Zarejestruj">
+    </div>
+</div> 
+    
+</div>
+</form> 
+
+
+
+</body>
+</html>
